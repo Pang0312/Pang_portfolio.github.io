@@ -3,7 +3,8 @@ const projects = [
     title: 'EcoEats APU',
     type: 'Responsive Web Design & Development',
     description: 'A web-based food waste reduction system for APU. It includes student dashboards, waste tracking, feedback, leaderboard, vendor functions and sustainability-related features.',
-    cover: 'assets/images/ecoeats-dashboard.webp',
+    cover: 'assets/images/ecoeats-logo.png',
+    coverMode: 'contain',
     tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'WampServer'],
     features: [
       'Student dashboard with weekly and monthly waste summary',
@@ -14,6 +15,7 @@ const projects = [
       'Vendor dashboard for event and food sharing overview'
     ],
     images: [
+      { src: 'assets/images/ecoeats-logo.png', alt: 'EcoEats APU logo' },
       { src: 'assets/images/ecoeats-dashboard.webp', alt: 'EcoEats APU student dashboard' },
       { src: 'assets/images/ecoeats-profile.webp', alt: 'EcoEats APU profile page' },
       { src: 'assets/images/ecoeats-sidebar.webp', alt: 'EcoEats APU sidebar navigation' },
@@ -29,6 +31,7 @@ const projects = [
     type: 'Capstone Project',
     description: 'A travel planning website for discovering Asian destinations, checking destination information, planning trips, managing saved trips and reading travel reviews.',
     cover: 'assets/images/trev-logo.png',
+    coverMode: 'contain',
     tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'WampServer'],
     features: [
       'Home page with destination discovery section',
@@ -52,6 +55,7 @@ const projects = [
     type: 'Java Desktop Application',
     description: 'A Java Swing desktop application built in Apache NetBeans. It manages basic tuition centre functions such as student records, schedules, payments and role-based dashboards.',
     cover: 'assets/images/tuition-logo.png',
+    coverMode: 'contain',
     tags: ['Java', 'Java Swing', 'Apache NetBeans', 'OOP', 'File Handling'],
     features: [
       'Role-based system for receptionist, tutor, student and admin',
@@ -115,7 +119,7 @@ function createProjectCards() {
     card.type = 'button';
     card.setAttribute('aria-label', `View details for ${project.title}`);
     card.innerHTML = `
-      <div class="project-cover">
+      <div class="project-cover ${project.coverMode === 'contain' ? 'project-cover-contain' : ''}">
         <img src="${project.cover}" alt="${project.title}" loading="lazy">
       </div>
       <div class="project-content">
