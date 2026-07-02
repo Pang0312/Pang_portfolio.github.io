@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pang Cheng Siang | Software Engineering Portfolio</title>
+  <meta name="description" content="Portfolio website of Pang Cheng Siang, Software Engineering student at Asia Pacific University." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Pang<span>.</span></a>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content fade-in">
+        <p class="eyebrow">Software Engineering Student</p>
+        <h1>Hi, I am <span>Pang Cheng Siang</span></h1>
+        <p class="hero-text">Diploma in ICT Software Engineering student passionate about building clean, useful and user-friendly web and software solutions.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="assets/Pang_Cheng_Siang_CV.pdf" download>Download CV</a>
+          <a class="btn secondary" href="#projects">View Projects</a>
+        </div>
+      </div>
+      <div class="hero-image fade-in">
+        <div class="image-card">
+          <img src="assets/profile.jpg" alt="Pang Cheng Siang profile photo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-title">
+        <p class="eyebrow">About Me</p>
+        <h2>Motivated student ready for real-world software development.</h2>
+      </div>
+      <p>I am currently pursuing a Diploma in Information and Communication Technology, specializing in Software Engineering at Asia Pacific University. I am eager to learn, improve my coding ability, and contribute to internship projects where I can gain hands-on experience.</p>
+      <div class="about-grid">
+        <div class="info-card"><strong>Location</strong><span>Malaysia</span></div>
+        <div class="info-card"><strong>Internship Period</strong><span>20 July 2026 - 9 October 2026</span></div>
+        <div class="info-card"><strong>Email</strong><span>pangcs0312@gmail.com</span></div>
+        <div class="info-card"><strong>Phone</strong><span>+601159954889</span></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-title">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical skills and tools I use.</h2>
+      </div>
+      <div class="skill-layout">
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Java</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <div class="tags">
+            <span>VS Code</span><span>PyCharm</span><span>Apache NetBeans</span><span>pgAdmin 4</span><span>GitHub</span><span>Excel</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span>Chinese</span><span>English</span><span>Malay</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-title">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected project experience.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-icon">🌐</div>
+          <h3>Assignment Submission Website</h3>
+          <p>A web-based platform that allows students to upload and manage assignment submissions. Built to organize and store submitted files efficiently.</p>
+          <div class="project-tech"><span>HTML</span><span>Web System</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-icon">🎓</div>
+          <h3>Education System</h3>
+          <p>A simple education management system developed using Python to handle course-related information and support user interaction.</p>
+          <div class="project-tech"><span>Python</span><span>Management System</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section education">
+      <div class="section-title">
+        <p class="eyebrow">Education</p>
+        <h2>Academic background.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>2024 - Present</span>
+          <h3>Asia Pacific University (APU)</h3>
+          <p>Diploma in Information and Communication Technology (Software Engineering)</p>
+        </div>
+        <div class="timeline-item">
+          <span>2019 - 2024</span>
+          <h3>SMK Seri Perling</h3>
+          <p>SPM</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-box">
+        <p class="eyebrow">Contact</p>
+        <h2>Interested in working together?</h2>
+        <p>I am currently seeking internship opportunities where I can learn, contribute and grow as a software engineering student.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:pangcs0312@gmail.com">Email Me</a>
+          <a class="btn secondary" href="assets/Pang_Cheng_Siang_CV.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Pang Cheng Siang. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
