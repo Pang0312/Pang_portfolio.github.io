@@ -1,30 +1,14 @@
-# Pang Cheng Siang Portfolio
+# Pang Cheng Siang Portfolio - Fixed Version
 
-This is a responsive portfolio website for GitHub Pages.
+This version has CSS and JavaScript embedded inside `index.html`, so GitHub Pages will load the portfolio even if external CSS/JS files are cached or not uploaded properly.
 
-## Files
+## Upload steps
 
-```text
-index.html
-style.css
-script.js
-assets/
-  docs/
-    Pang_Cheng_Siang_CV.pdf
-  images/
-    project screenshots and logos
-```
-
-## How to upload to GitHub Pages
-
-1. Extract the ZIP file.
-2. Open your repository: `pang0312.github.io`.
-3. Upload everything inside this folder.
-4. Replace the existing files.
+1. Extract this ZIP.
+2. Open your GitHub repo: `pang0312.github.io`.
+3. Upload everything inside the extracted folder.
+4. Replace existing files.
 5. Commit changes.
-6. Wait 1-3 minutes.
-7. Visit: `https://pang0312.github.io/`
+6. Open `https://pang0312.github.io/` and press Ctrl + F5.
 
-## Important
-
-Do not upload the ZIP file itself. Upload the contents inside the extracted folder.
+Important: `index.html` must be at the root of the repository, not inside another folder.
