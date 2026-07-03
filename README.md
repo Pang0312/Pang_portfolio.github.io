@@ -12,3 +12,6 @@ This version has CSS and JavaScript embedded inside `index.html`, so GitHub Page
 6. Open `https://pang0312.github.io/` and press Ctrl + F5.
 
 Important: `index.html` must be at the root of the repository, not inside another folder.
+
+
+CV updated: the Download CV button uses assets/docs/Pang_Cheng_Siang_CV.pdf.
